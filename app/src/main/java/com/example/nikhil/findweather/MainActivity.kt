@@ -58,6 +58,7 @@ class MainActivity : AppCompatActivity() {
                var temp_fahrenheit=condition.getString("temp")
                var temp_celcius=(temp_fahrenheit.toInt()-32)*(0.5555555555555556)
                tv_temp.text=temp_fahrenheit+"°F"+" , "+temp_celcius+"°C"
+                Toast.makeText(this@MainActivity,"Weather For ${edit_text_city.text}",Toast.LENGTH_SHORT).show()
 
            }
 
@@ -92,3 +93,5 @@ class MainActivity : AppCompatActivity() {
 
     }
 }
+//#@cker's Studio
+//By Ankush Shrivastava
